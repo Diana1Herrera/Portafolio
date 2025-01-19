@@ -7,6 +7,41 @@
     --text-black-700:#504e70;
 
 }
+.small-carousel {
+    width: 400px; /* Ajusta el ancho del carrusel */
+    margin: 20px auto; /* Espaciado entre carruseles */
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding-bottom: 30px;
+
+  }
+
+  .small-carousel img {
+    width: 100%; /* La imagen ocupa el ancho completo del contenedor */
+    height: auto; /* Mantén la proporción de la imagen */
+    height: 200px; /* Ajusta la altura de las imágenes */
+    object-fit: contain; /* Asegura que la imagen completa se muestre sin recortes */
+    background-color: #f8f9fa; /* Fondo gris claro opcional para imágenes más pequeñas */
+  }
+
+  .carousel-container {
+    display: flex;
+    justify-content: center; /* Centra los carruseles horizontalmente */
+    gap: 10px; /* Espaciado entre carruseles */
+    flex-wrap: wrap; /* Permite que los carruseles se ajusten en varias filas */
+  }
+   .abtn-carousel {
+    text-align: center; /* Centra el contenido dentro del contenedor */
+    margin-top: 10px; /* Añade espacio entre la imagen y el botón */
+    color: var(--skin-color);
+    
+  } 
+  #portafolio-parrafo{
+    margin-top: 30px;
+    font-family: "Poppins" sans-serif ;
+    color: var(--text-black-700);
+  }
+
 body.dark{
     --bg-black-900:#151515;
     --bg-black-100:#222222;
@@ -104,7 +139,7 @@ ul{
     margin-right: -15px;
     position: relative;
 }
-.btn{
+.btn1{
     font-size: 16px;
     font-weight: 500;
     padding: 12px 35px;
@@ -118,7 +153,7 @@ ul{
     margin-top: 15px;
     transition: all 0.3s ease;
 }
-.btn:hover{
+.btn1:hover{
     transform: scale(1.05);
 }
 .shadow-dark{ /*da sombrita*/
@@ -160,6 +195,7 @@ box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
     font-size: 30px;
     letter-spacing: 2px;
     position: relative;
+    color: var(--skin-color);
 }
 .aside .logo a span{
     font-family: 'clicker Script', cursive;
@@ -220,7 +256,6 @@ box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
     font-size: 16px;
     font-weight: 600;
     display: block;
-    border-bottom: 1px solid var(--bg-black-50) ;
     color: var(--text-black-900);
     padding: 5px 15 px;
 }
@@ -230,11 +265,12 @@ box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
 }
 .aside .nav li a.active{
     color: var(--skin-color);
-    
+  
 }
 .aside .nav li a i{
-    margin-right:15px ;
+    margin-right:37px ;
 }
+
 
 /* home */
 .home{
@@ -641,6 +677,12 @@ color: var(--text-black-900);
     color: var(--text-black-700);
     font-weight: 400;
 }
+.linkedin{
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--text-black-700);
+    font-weight: 400;}
 
 /* formulario */
 

@@ -21,6 +21,8 @@
       <link rel="stylesheet" href="color-4.css" class="alternate-style" title="color-4" disabled>
       <link rel="stylesheet" href="color-5.css" class="alternate-style" title="color-5" disabled>
       <link rel="stylesheet" href="style-switcher.css">
+            <!--revisar que bootsrap me esta des1cuadrando algunas cosas  -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
     <div class="main-container">
@@ -29,11 +31,11 @@
                 <span>  </span>
             </div>
             <div class="logo">
-                <a href="#">Bienvenid@s!<span></span></a>
+                <a href="#" class="active">Bienvenid@s!<span></span></a>
             </div>
             <ul class="nav" id="aside-menu">
-                <li><a href="#home" class="active"><i class="fa fa-home"></i>Inicio</a></li>
-                <li><a href="#about"><i class="fa fa-user"></i>Sobre mi</a></li>
+                <li><a href="#home" ><i class="fa fa-home"></i>Inicio</a></li>
+                <li><a href="#about" ><i class="fa fa-user"></i>Sobre mi</a></li>
                 <li><a href="#services"><i class="fa fa-list"></i>Tecnología</a></li>
                 <li><a href="#portfolio"><i class="fa fa-briefcase"></i>Portafolio</a></li>
                 <li><a href="#contact"><i class="fa fa-comments"></i>Contactame</a></li>
@@ -50,8 +52,8 @@
                             <h3 class="my-profession">Soy <span class="typing">Web Designer</span></h3>
                             <p>Me motiva desarrollar soluciones tecnológicas que generen impacto, destacando
                                  por mi enfoque proactivo, trabajo en equipo y capacidad de adaptación a nuevos desafíos.  </p>
-                            <a href="CV/Hoja de vida-DianaH.pdf" class="btn"> Descargar Hoja de Vida</a>
-                            <a href="#contact" class="btn hire-me"> Contactame</a>
+                            <a href="CV/Hoja de vida-DianaH.pdf" class="btn1"> Descargar Hoja de Vida</a>
+                            <a href="#contact" class="btn1 hire-me"> Contactame</a>
                         </div>
                         <div class="home-img padd-15">
                             <img src="imagenes/Diana.jpg" alt="Diana">
@@ -107,8 +109,8 @@
                                 </div>
                                 <div class="row">
                                     <div class="buttons padd-15">
-                                        <a href="#" class="btn"> Descargar Hoja de Vida</a>
-                                        <a href="#contact" class="btn hire-me"> Contratame</a>
+                                        <a href="#" class="btn1"> Descargar Hoja de Vida</a>
+                                        <a href="#contact" class="btn1 hire-me"> Contratame</a>
                                     </div>
                                 </div>
                                </div>
@@ -377,73 +379,123 @@
                             </div>
                         </div>
                         <div class="row">
-                              <!--portafolio  item start-->
-                              <div class="portfolio-item padd-15">
-                                <div class="portfolio-item-inner shadow-dark">
-                                    <div class="portfolio-img">
-                                        <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cG9ydGZvbGlvfGVufDB8fDB8fHww" alt="">
-
-                                    </div>
-
+                          <div class="carousel-container">
+                            <!-- Carrusel 1 -->
+                            <div id="carousel3" class="carousel slide small-carousel" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img src="https://res.cloudinary.com/dxzn8io5i/image/upload/e_improve/v1737221658/eps_formulario_qokvo6.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="https://res.cloudinary.com/dxzn8io5i/image/upload/e_sharpen/v1737221651/arbol_en_funcionamienot_jjfruj.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="https://res.cloudinary.com/dxzn8io5i/image/upload/e_improve,e_sharpen/v1737221670/musica_inicio_nwphxh.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="https://res.cloudinary.com/dxzn8io5i/image/upload/e_improve,e_sharpen/v1737221665/inicion_eps_xb7c2o.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carousel3" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carousel3" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                                <div>
+                                    <p id="portafolio-parrafo">Este proyecto es una aplicación de escritorio desarrollada en C# utilizando Windows Forms, 
+                                        Integra tres aplicaciones.</p>
+                                </div>
+                                <div class="abtn-carousel">
+                                    <a href="https://github.com/Diana1Herrera/IntegracionProyectoAcademico.git" target="_blank" class="btn btn-outline-info mt-2">Ver Repositorio</a>
+                                  </div>
+                              </div>
+                        
+                            <!-- Carrusel 2 -->
+                            <div id="carousel2" class="carousel slide small-carousel" data-bs-ride="carousel">
+                              <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                  <img src="https://res.cloudinary.com/dxzn8io5i/image/upload/e_improve/v1737227337/heroes_fuiwxn.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="https://res.cloudinary.com/dxzn8io5i/image/upload/e_improve/v1737227351/accesorios_jmlepy.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://res.cloudinary.com/dxzn8io5i/image/upload/e_improve/v1737227344/servicios_qftfyx.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                              </div>
+                              <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                              </button>
+                              <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                              </button>
+                              <div>
+                                <p id="portafolio-parrafo"> Landing page interactiva, desarrollada en una Hackathon que muestra los principales productos de una
+                                     tienda deportiva infantil.</p>
+                            </div>
+                              <div class="abtn-carousel">
+                                <a href="https://github.com/Diana1Herrera/HackatonAll.git" target="_blank" class="btn btn-outline-info mt-2">Ver Repositorio</a>
+                              </div>
+                            </div>
+                        
+                            <!-- Carrusel 3 -->
+                            <div id="carousel3" class="carousel slide small-carousel" data-bs-ride="carousel">
+                              <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                  <img src="https://images.pexels.com/photos/14021701/pexels-photo-14021701.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="https://images.pexels.com/photos/6299920/pexels-photo-6299920.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" class="d-block w-100" alt="...">
                                 </div>
                               </div>
-                             <!--portafolio  end-->
-                                <!--portafolio  item start-->
-                                <div class="portfolio-item padd-15">
-                                    <div class="portfolio-item-inner shadow-dark">
-                                        <div class="portfolio-img">
-                                            <img src="https://media.istockphoto.com/id/2148573173/photo/real-estate-concept-business-home-insurance-and-real-estate-protection-buy-and-sell-houses.webp?a=1&b=1&s=612x612&w=0&k=20&c=gbb8GFSagsGiPhMOTvqG5JXZcph9ENzpa7DBuUZJ9TM=" alt="">
-    
-                                        </div>
-    
-                                    </div>
+                              <button class="carousel-control-prev" type="button" data-bs-target="#carousel3" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                              </button>
+                              <button class="carousel-control-next" type="button" data-bs-target="#carousel3" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                              </button>
+                              <div>
+                                <p id="portafolio-parrafo">Este proyecto es una aplicación de escritorio desarrollada en C# utilizando Windows Forms, 
+                                    Integra tres aplicaciones.</p>
+                            </div>
+                              <div class="abtn-carousel">
+                                <a href="..." target="_blank" class="btn btn-outline-info mt-2">Ver Repositorio</a>
+                              </div>
+                            </div>
+                             <!-- Carrusel 4 -->
+                             <div id="carousel3" class="carousel slide small-carousel" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img src="https://images.pexels.com/photos/14021701/pexels-photo-14021701.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" class="d-block w-100" alt="...">
                                   </div>
-                                 <!--portafolio  end-->
-                                    <!--portafolio  item start-->
-                              <div class="portfolio-item padd-15">
-                                <div class="portfolio-item-inner shadow-dark">
-                                    <div class="portfolio-img">
-                                        <img src="https://media.istockphoto.com/id/2022152397/photo/planning-and-strategy-financial-portfolio-and-assets-manager-analyzing-financial-and-banking.webp?a=1&b=1&s=612x612&w=0&k=20&c=U61R_5j45ZDN8GiWm0AsCpg_S35uP_PHtng-BvbJ3h4=" alt="">
-
-                                    </div>
-
+                                  <div class="carousel-item">
+                                    <img src="https://images.pexels.com/photos/6299920/pexels-photo-6299920.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" class="d-block w-100" alt="...">
+                                  </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carousel3" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carousel3" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                                <div>
+                                  <p id="portafolio-parrafo">Este proyecto es una aplicación de escritorio desarrollada en C# utilizando Windows Forms, 
+                                      Integra tres aplicaciones.</p>
+                              </div>
+                                <div class="abtn-carousel">
+                                  <a href="..." target="_blank" class="btn btn-outline-info mt-2">Ver Repositorio</a>
                                 </div>
                               </div>
-                             <!--portafolio  end-->
-                                <!--portafolio  item start-->
-                                <div class="portfolio-item padd-15">
-                                    <div class="portfolio-item-inner shadow-dark">
-                                        <div class="portfolio-img">
-                                            <img src="https://media.istockphoto.com/id/1502896527/photo/office-meeting-and-documents-of-business-people-clients-or-team-for-taxes-audit-or-revenue.webp?a=1&b=1&s=612x612&w=0&k=20&c=k4-TacdiVfmnFcjt_Y3Y7YKnOqXV4WY0sdwV8bjokIE=" alt="">
-    
-                                        </div>
-    
-                                    </div>
-                                  </div>
-                                 <!--portafolio  end-->
-                                    <!--portafolio  item start-->
-                              <div class="portfolio-item padd-15">
-                                <div class="portfolio-item-inner shadow-dark">
-                                    <div class="portfolio-img">
-                                        <img src="https://plus.unsplash.com/premium_photo-1661389861760-e28a94920f04?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjV8fHBvcnRmb2xpb3xlbnwwfHwwfHx8MA%3D%3D" alt="">
-
-                                    </div>
-
-                                </div>
-                              </div>
-                             <!--portafolio  end-->
-                                <!--portafolio  item start-->
-                                <div class="portfolio-item padd-15">
-                                    <div class="portfolio-item-inner shadow-dark">
-                                        <div class="portfolio-img">
-                                            <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjh8fHBvcnRmb2xpb3xlbnwwfHwwfHx8MA%3D%3D" alt="">
-    
-                                        </div>
-    
-                                    </div>
-                                  </div>
-                                 <!--portafolio  end-->
-
+                          </div>
                         </div>
                     </div>
                 </section>
@@ -481,16 +533,18 @@
                                 </div>
                                 <!--contacto informacion item end  -->
                                    <!--contacto informacion item start  -->
-                                   <div class="contact-info-item padd-15" >
-                                    <div class="icon"> <i class="fa fa-globe-europe"></i></div>
-                                    <h4>Sitio web </h4>
-                                    <p>www.domain.com</p>
+                                   <div class="contact-info-item padd-15">
+                                    <div class="icon"> <i class="fa fab fa-linkedin"></i></div>
+                                    <h4>LinkedIn</h4>
+                                    <p>
+                                        <a class="linkedin" href="https://www.linkedin.com/in/diana-carolina-herrera-ayala-fullstack-development/" target="_blank" rel="noopener noreferrer">Visita mi perfil ▶️</a>
+                                    </p>
                                 </div>
                                 <!--contacto informacion item end  -->
 
                         </div>
-                        <h3 class="contact-title padd-15">Enviame un correo</h3>
-                        <h4 class="contact-sub-title padd-15">Soy muy rapida en responder!</h4>
+                        <h3 class="contact-title padd-15">Enviame un correo!</h3>
+                        <h4 class="contact-sub-title padd-15 ">Soy muy rapida en responder.🏃‍♀️‍➡️🏃‍♀️‍➡️🏃‍♀️‍➡️</h4>
                            <!-- formulario de contacto start  -->
                             <div class="row">
                                 <div class="contact-form padd-15">
@@ -515,7 +569,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="form-item col-12 padd-15">
-                                            <button type="submit" class="btn">Enviar</button>
+                                            <button type="submit" class="btn1 ">Enviar</button>
                                         </div>
                                     </div>
                              
@@ -551,7 +605,7 @@
       <!--style Switcher end  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" 
     referrerpolicy="no-referrer"></script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
     <script src="style-switcher.js"></script>
 </body>
