@@ -8,12 +8,12 @@
 
 }
 .small-carousel {
-    width: 400px; /* Ajusta el ancho del carrusel */
-    margin: 20px auto; /* Espaciado entre carruseles */
+    width: 500px; /* Ajusta el ancho del carrusel */
+    margin: 10px auto; /* Espaciado entre carruseles */
     flex: 0 0 33.33%;
     max-width: 33.33%;
     padding-bottom: 30px;
-
+  
   }
 
   .small-carousel img {
@@ -21,13 +21,12 @@
     height: auto; /* Mantén la proporción de la imagen */
     height: 200px; /* Ajusta la altura de las imágenes */
     object-fit: contain; /* Asegura que la imagen completa se muestre sin recortes */
-    background-color: #f8f9fa; /* Fondo gris claro opcional para imágenes más pequeñas */
   }
 
   .carousel-container {
     display: flex;
     justify-content: center; /* Centra los carruseles horizontalmente */
-    gap: 10px; /* Espaciado entre carruseles */
+    gap: 5px; /* Espaciado entre carruseles */
     flex-wrap: wrap; /* Permite que los carruseles se ajusten en varias filas */
   }
    .abtn-carousel {
@@ -41,6 +40,40 @@
     font-family: "Poppins" sans-serif ;
     color: var(--text-black-700);
   }
+  .carousel-control-prev,
+.carousel-control-next {
+  width: 5%; /* Ajusta el ancho si es necesario */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 30px; /* Ajusta el tamaño del icono */
+  width: 30px; /* Ajusta el tamaño del icono */
+  background-size: 100%; /* Asegúrate de que el icono se vea bien */
+}
+
+.carousel-control-prev {
+  left: -10px; /* Ajusta la posición hacia la izquierda */
+}
+
+.carousel-control-next {
+  right: -10px; /* Ajusta la posición hacia la derecha */
+}
+
+.small-carousel .carousel-control-prev,
+.small-carousel .carousel-control-next {
+  top: 50%; /* Centra verticalmente los botones */
+  transform: translateY(-50%); /* Asegura que queden centrados */
+}
+
+.small-carousel .carousel-control-prev {
+  left: 5px; /* Asegura que no se sobreponga a la imagen */
+}
+
+.small-carousel .carousel-control-next {
+  right: 5px; /* Asegura que no se sobreponga a la imagen */
+}
+
 
 body.dark{
     --bg-black-900:#151515;
@@ -607,8 +640,8 @@ color: var(--text-black-900);
 .portfolio .portfolio-heading{
     flex: 0 0 100%;
     max-width: 100%;
-    margin-bottom: 40px;
-
+    margin-bottom: 30px;
+  
 }
 .portfolio .portfolio-heading h2{
     color: var(--text-black-900);
@@ -739,7 +772,7 @@ color: var(--text-black-900);
 }
 @media (max-width:991px){
     .contact .contact-info-item,
-    .portfolio .portfolio-item{
+    .portfolio .portfolio-item .carousel-container{
         flex: 0 0 50%;
         max-width: 50%;
     }
@@ -758,8 +791,10 @@ color: var(--text-black-900);
 }
 @media (max-width:767px){
     .contact .contact-form .col-6,
+    .small-carousel,
     .contact .contact-info-item,
     .portfolio .portfolio-item,
+    .portfolio .carousel-container,
     .service .service-item,
     .about .about-content .experience,
     .about .about-content .education,
