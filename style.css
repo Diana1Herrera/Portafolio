@@ -13,6 +13,8 @@
     flex: 0 0 33.33%;
     max-width: 33.33%;
     padding-bottom: 30px;
+    text-align: center; 
+   
   
   }
 
@@ -29,12 +31,25 @@
     gap: 5px; /* Espaciado entre carruseles */
     flex-wrap: wrap; /* Permite que los carruseles se ajusten en varias filas */
   }
-   .abtn-carousel {
-    text-align: center; /* Centra el contenido dentro del contenedor */
-    margin-top: 10px; /* Añade espacio entre la imagen y el botón */
-    color: var(--skin-color);
-    
-  } 
+  .abtn-carousel .btn {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 12px 35px;
+    color: white; /* Color del texto predeterminado */
+    border-radius: 15px;
+    display: inline-block;
+    background: var(--skin-color); /* Fondo sólido por defecto */
+    border: 2px solid var(--skin-color); /* Borde del mismo color que el fondo */
+    margin-top: 10px;
+    text-decoration: none; /* Elimina el subrayado */
+    transition: all 0.3s ease; /* Suaviza las transiciones */
+}
+
+.abtn-carousel .btn:hover {
+    background: transparent; /* Fondo transparente en hover */
+    color: var(--skin-color); /* Cambia el color del texto al color principal */
+    border: 2px solid var(--skin-color); /* Borde visible */
+}
   #portafolio-parrafo{
     margin-top: 30px;
     font-family: "Poppins" sans-serif ;
@@ -173,7 +188,7 @@ ul{
     position: relative;
 }
 .btn1{
-    font-size: 16px;
+    font-size: 19px;
     font-weight: 500;
     padding: 12px 35px;
     color: white;
@@ -181,6 +196,7 @@ ul{
     display: inline-block;
     white-space: nowrap; /*Mantiene el contenido en una línea */
     border: none;
+    text-decoration: none; /* Quita el subrayado */
     background: var(--skin-color);
     margin-right: 10px; /* espacio entre botones */
     margin-top: 15px;
@@ -189,6 +205,28 @@ ul{
 .btn1:hover{
     transform: scale(1.05);
 }
+.btn2 {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 35px;
+    color: var(--skin-color); /* El color del texto debe coincidir con el borde */
+    border-radius: 40px;
+    display: inline-block;
+    white-space: nowrap; /* Mantiene el contenido en una línea */
+    border: 2px solid var(--skin-color); /* Define el borde del botón fantasma */
+    background: transparent; /* Fondo transparente */
+    margin-right: 10px; /* Espacio entre botones */
+    margin-top: 15px;
+    text-decoration: none; /* Quita el subrayado */
+    transition: all 0.3s ease;
+}
+
+.btn2:hover {
+    transform: scale(1.05);
+    background: var(--skin-color); /* Fondo del color principal al pasar el mouse */
+    color: white; /* Cambia el color del texto al pasar el mouse */
+}
+
 .shadow-dark{ /*da sombrita*/
 box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
 }
@@ -243,15 +281,16 @@ box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
     border: 1px solid var(--bg-black-50);
     cursor: pointer;
     position: fixed;
-    left: 300px;
+    right: 0;
     top: 20px;
     border-radius: 5px;
     background: var(--bg-black-100);
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     transition: left 0.3s ease; 
-   z-index: 20; /* Asegura que la hamburguesa esté por encima del menú */
+    margin-right:22px ;
+    z-index: 102; /* Asegura que la hamburguesa esté por encima del menú */
 
 }
 .aside .nav-toggler span
@@ -316,12 +355,12 @@ box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
     max-width: 60%;
 }
 h3.hello{
-    font-size: 28px;
+    font-size: 40px;
     margin: 15px 0;
 }
 h3.hello span{
     font-family:'Clicker Script', cursive;
-    font-size: 30px;
+    font-size:45 px;
     font-weight: 700;
     color: var(--skin-color)
 
@@ -340,9 +379,11 @@ h3.hello span{
 }
 .home .home-img{
     flex: 0 0 40%;
+    flex: none;
     max-width: 40%;
    position: relative;
     text-align : center;
+    display: inline-block; /* Ajusta el tamaño del contenedor al contenido */
 }
 .home-img::after{
     content:'';
@@ -362,13 +403,14 @@ h3.hello span{
     border-top: 10px solid var(--skin-color);
     border-left:10px solid var(--skin-color);
     left:-20px;
-   top:-40px;
+    top:-40px;
 }
 .home .home-img img{
     height:250px;
     width: 200;
     border-radius: 5px;
     margin: auto;
+    display: block; /* Evita que la imagen se comporte como elemento en línea */
 }
 
 /*sobre mi */
@@ -711,7 +753,7 @@ color: var(--text-black-900);
     font-weight: 400;
 }
 .linkedin{
-    text-decoration: none;
+    text-decoration: underline;
     font-size: 16px;
     line-height: 25px;
     color: var(--text-black-700);
@@ -758,6 +800,24 @@ color: var(--text-black-900);
     padding: 0 50px;
 }
 @media (max-width:1199px){
+    .aside .nav-toggler{
+        height: 40px;
+        width: 45px;
+        border: 1px solid var(--bg-black-50);
+        cursor: pointer;
+        position: fixed;
+        right: 0;
+        top: 20px;
+        border-radius: 5px;
+        background: var(--bg-black-100);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: left 0.3s ease; 
+        margin-right:22px ;
+        z-index: 102; /* Asegura que la hamburguesa esté por encima del menú */
+    
+    }
     .aside{
         left: -270px;
         
