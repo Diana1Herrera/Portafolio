@@ -88,6 +88,10 @@
 .small-carousel .carousel-control-next {
   right: 5px; /* Asegura que no se sobreponga a la imagen */
 }
+#TituloPortafolio{
+    font-size: 33px;
+    color: var(--skin-color);
+}
 
 
 body.dark{
