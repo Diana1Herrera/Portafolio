@@ -1,7 +1,7 @@
 /*typing animate*/
 
 var typed = new Typed(".typing",{
-    strings:["Desarrolladora Web FullStack","Backend","Frontend",],
+    strings:["Desarrolladora Web FullStack","Desarrolladora Backend","Desarrolladora Frontend","Apasionada por la tecnología"],
     typeSpeed:100,
     BackSpeed:60,
     loop:true
