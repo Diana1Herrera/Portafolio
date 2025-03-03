@@ -830,6 +830,7 @@ color: var(--text-black-900);
         transition: left 0.3s ease; 
         margin-right:22px ;
         z-index: 102; /* Asegura que la hamburguesa esté por encima del menú */
+        
     
     }
     .aside{
@@ -862,9 +863,7 @@ color: var(--text-black-900);
     .home .home-img{
         display: none; 
     }
-    .contact-form {
-        align-items: center;
-    }
+
 }
 @media (max-width:767px){
     .contact .contact-form .col-6,
